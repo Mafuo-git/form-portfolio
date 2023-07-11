@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test formulaire</title>
+
+</head>
+
+
+<body>
+
+    <div class="contactez-moi">
+        <h2>Vous souhaitez me contacter ?</h2>
+        <p>Entrez vos informations dans le formulaire ci-dessous et je vous recontacterai dès que possible.</p>
+
+        <p class="obligatoire"><em>*</em> Ces informations sont obligatoires</p>
+        <form action="https://formspree.io/f/xleyeggn" method="POST">
+
+            <label>
+                Votre nom <em>*</em>
+                <input type="text" id="nom" name="Nom" required>
+            </label>
+
+            <label>
+                Votre prénom <em>*</em>
+                <input type="text" id="prenom" name="Prénom" required>
+            </label>
+
+            <label>
+                Nom de votre entreprise
+                <input type="text" id="nom-entreprise" name="Nom de l'entreprise">
+            </label>
+
+            <label>
+                Votre email <em>*</em>
+                <input type="email" id="email" name="Email" placeholder="ex : votreadresse@mail.com" required>
+            </label>
+
+            <label>
+                Votre numéro de téléphone <em>*</em>
+                <select id="countryCode" name="Code du pays" required>
+                    <option value="+33">France (+33)</option>
+                    <option value="+1">États-Unis / Canada (+1)</option>
+                    <option value="+44">Royaume-Uni (+44)</option>
+                    <option value="+49">Allemagne (+49)</option>
+                    <option value="+32">Belgique (+32)</option>
+                    <option value="+86">Chine (+86)</option>
+                    <option value="+81">Japon (+81)</option>
+                    <option value="+41">Suisse (+41)</option>
+                    <option value="+39">Italie (+39)</option>
+                    <option value="+34">Espagne (+34)</option>
+                    <option value="+31">Pays-Bas (+31)</option>
+                    <option value="+352">Luxembourg (+352)</option>
+                    <option value="+353">Irlande (+353)</option>
+                    <option value="+43">Autriche (+43)</option>
+                    <option value="+351">Portugal (+351)</option>
+                    <option value="+358">Finlande (+358)</option>
+                    <option value="+46">Suède (+46)</option>
+                    <option value="+47">Norvège (+47)</option>
+                    <option value="+45">Danemark (+45)</option>
+
+                    <!-- Ajoutez d'autres options pour les pays supplémentaires -->
+                </select>
+                <input type="tel" id="tel" name="Numéro de téléphone" placeholder="ex : 07 12 34 56 78" pattern="[0-9\s]+" required>
+            </label>
+            
+            
+
+            <label>
+                Votre message
+                <textarea class="textarea-autoresize" id="message" name="Message" placeholder="Écrivez votre message ici" cols=20></textarea>
+            </label>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </div>
+
+</body>
+
+<footer>
+    <p>© 2023 - Tous droits réservés - <a href="https://www.linkedin.com/in/math%C3%A9o-merlin/">Mathéo Merlin</a></p>
+</footer>
+
+</html>
